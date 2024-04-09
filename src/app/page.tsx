@@ -11,6 +11,7 @@ export default function Home() {
         doloremque facere dolor a. Doloribus.
       </p>
       <p>Testing paragraph</p>
+      <button>OK</button>
     </div>
   );
 }
