@@ -18,8 +18,8 @@ type CardTypeProps = {
     vote_count: string;
     vote_average: number;
     Icon: IconType;
-    Math : string;
-    round : any
+    Math: string;
+    round: any;
   };
 };
 
@@ -41,14 +41,15 @@ export default function Card({ result }: CardTypeProps) {
             {result.title || result.name}
           </h2>
           <p className="line-clamp-2 text-sm">{result.overview}</p>
-          <p className=" flex items-center justify-center bg-orange-400 px-5 rounded-3xl w-6 h-6 text-xs pr-10 pl-10 gap-2">
-            <p className="text-xl"> <IoIosStarOutline/></p>
-            <p>
-            {Math.round(result.vote_average * 10) / 10}
+          <div className=" flex items-center justify-center bg-orange-400 px-5 rounded-3xl w-6 h-6 text-xs pr-10 pl-10 gap-2">
+            <p className="text-xl">
+              {" "}
+              <IoIosStarOutline />
             </p>
+            <p>{Math.round(result.vote_average * 10) / 10}</p>
             {/* <FiThumbsUp className="h-5 mr-1 ml-3" /> */}
             {/* {result.vote_count} */}
-          </p>
+          </div>
         </div>
       </Link>
     </div>
