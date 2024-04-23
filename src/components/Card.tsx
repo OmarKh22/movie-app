@@ -34,7 +34,7 @@ export default function Card({ result }: CardTypeProps) {
           alt="poster image"
           width={500}
           height={300}
-          className="sm:rounded-t-lg group-hover:opacity-75 transition-opacity duration-300"
+          className="sm:rounded-t-lg group-hover:opacity-75 transition-opacity duration-300 object-cover max-h-[160px]"
         />
         <div className="pl-2 mt-3 space-y-2">
           <h2 className="text-lg font-bold line-clamp-1">
