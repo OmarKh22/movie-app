@@ -11,12 +11,12 @@ export default function SearchBox() {
   };
   return (
     <form
-      className="flex justify-between px-5 max-w-6xl mx-auto"
+      className=" mt-4 flex justify-between px-5 max-w-6xl mx-auto items-center border-amber-500 border rounded-lg"
       onSubmit={handleSubmit}>
       <input
         type="text"
-        placeholder="Search keywords..."
-        className="w-full h-14 rounded-md placeholder-gray-500 outline-none bg-transparent"
+        placeholder="Search keywords...."
+        className="w-full h-14 rounded-md placeholder-gray-500 outline-none bg-transparent "
         onChange={(e) => setSearchWord(e.target.value)}
       />
       <button
