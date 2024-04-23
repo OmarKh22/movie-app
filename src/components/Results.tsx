@@ -3,7 +3,7 @@ import Card from "./Card";
 
 type ResultsType = {
   results: any;
-  res: any;
+  res?: any;
 };
 
 export default function Results({ results }: ResultsType) {
