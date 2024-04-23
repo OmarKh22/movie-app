@@ -21,7 +21,7 @@ export default async function Home({ searchParams }: searchParamsType) {
   }
 
   const results = data.results;
-  // console.log(results.original_title);
+  console.log(results);
   return (
     <div>
       <Results results={results} res={res} />
