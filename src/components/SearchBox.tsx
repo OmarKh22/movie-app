@@ -11,7 +11,7 @@ export default function SearchBox() {
   };
   return (
     <form
-      className=" mt-4 flex justify-between px-5 max-w-6xl mx-auto items-center border-amber-500 border rounded-lg"
+      className=" mt-4 flex justify-between px-5 max-w-6xl mx-auto items-center border-amber-400 border rounded-lg"
       onSubmit={handleSubmit}>
       <input
         type="text"
