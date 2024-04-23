@@ -10,7 +10,7 @@ type providerType ={
 const Providers = ({ children } : providerType) => {
   return (
     <ThemeProvider defaultTheme="system" attribute="class">
-      <div className="text-dark dark:text-white dark:bg-gray-700 min-h-screen select-none transition-colors duration-300">
+      <div className="text-dark dark:text-white dark:bg-black min-h-screen select-none transition-colors duration-300">
         {children}
       </div>
     </ThemeProvider>
